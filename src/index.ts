@@ -103,7 +103,7 @@ module.exports = function main(opt = {}) {
       return null;
     },
     onwrite(bundle) {
-      if (filter(bundle.file)) {
+      if (bundle.file && inputHtmlText) {
         return writeFile(join(process.cwd(), bundle.file.replace('.js', '.html')), inputHtmlText);
       }
     } 
