@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"noImplicitAny": false,
+		"removeComments": true,
+		"moduleResolution": "node",
+		"noUnusedLocals": false,
+		"importHelpers": true,
+		"noUnusedParameters": false,
+		"preserveConstEnums": true,
+		"target": "es6",
+		"sourceMap": false,
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"noImplicitReturns": true,
+		"jsx": "react",
+    "baseUrl": "./src",
+    "outDir": "./lib",
+		"paths": {
+			"talib": ["../node_modules/tslib/tslib.js"]
+		}
+	}
+}
